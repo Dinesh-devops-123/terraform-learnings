@@ -11,10 +11,7 @@ terraform {
 
 #provider block (provider configuration)
 provider "aws" {
-  alias   = "training"
+  #alias   = "training"
   profile = "account2"
   region  = var.aws_region
 }
-
-
-#configuration 

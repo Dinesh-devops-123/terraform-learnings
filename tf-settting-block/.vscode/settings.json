@@ -1,7 +1,12 @@
 {
     "cSpell.words": [
+        "Dinesh",
         "instance_keypair",
+        "myec",
+        "publicdns",
+        "publicip",
         "tfstate",
-        "tfvars"
+        "tfvars",
+        "virtulization"
     ]
 }
