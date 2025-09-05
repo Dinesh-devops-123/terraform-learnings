@@ -1,7 +1,5 @@
 # EC2 Instance
 
-# EC2 Instance
-
 resource "aws_instance" "myec2" {
   # provider = aws.training
   ami                    = data.aws_ami.ubuntu_2204.id
