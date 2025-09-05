@@ -1,0 +1,7 @@
+Meta-arguments in Terraform are special arguments we can use inside resources, data sources, modules, and providers. They don’t configure the actual cloud resource, but instead, they control how Terraform manages the resource itself.
+
+- count → create multiple resources by index.
+- for_each → create resources based on keys in a map or set, which avoids index shifting.
+- provider → choose provider config.
+- depends_on → explicit dependency.
+- lifecycle → manage create/update/destroy rules → fine-tune behavior, like preventing accidental deletes or ignoring certain changes.
