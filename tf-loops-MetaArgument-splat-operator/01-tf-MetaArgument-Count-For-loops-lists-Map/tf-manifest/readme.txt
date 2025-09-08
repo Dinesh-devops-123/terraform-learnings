@@ -14,3 +14,10 @@
     - Legacy splat operators .*.
     - Generalized Splat operators
     
+
+// Clean-up cmds
+- Terraform destroy --auto-approve
+
+# files --do this only for learning not for production
+  # rm -rvf .terraform* 
+  # rm -rvf terraform.tfstate 

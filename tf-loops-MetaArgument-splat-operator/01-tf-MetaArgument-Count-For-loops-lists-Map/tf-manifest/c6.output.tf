@@ -37,6 +37,7 @@ output "latest_splat_instance_publicdns"{
     value = aws_instance.myec2[*].public_dns
 }
 
+
 /*
 # EC2 Instance Public IP
 output "Instance_publicip" {
