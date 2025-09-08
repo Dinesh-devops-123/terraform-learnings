@@ -5,7 +5,8 @@ output "instance_publicip" {
     description = "EC2 Instance Public IP"
     #value = aws_instance.myec2.*.public_ip # legacy splat
     #value = aws_instance.myec2[*].public_ip #latest splat
-    value = [for instance in aws_instance.myec2: instance.public_ip]
+    #value = [for instance in aws_instance.myec2: instance.public_ip]
+    value = toset([for instance in aws_instance.myec2: instance.public_ip])
 }
 
 # EC2 Instance Public DNS with TOSET
@@ -13,7 +14,7 @@ output "instance_publicdns" {
     description = "EC2 Instance Public DNS"
     #value = aws_instance.myec2[*].public_dns # legacy splat
     #value = aws_instance.myec2[*].public_dns #latest splat
-    value = [for instance in aws_instance.myec2: instance.public_dns]
+    value = toset([for instance in aws_instance.myec2: instance.public_dns])
       
 }
 
