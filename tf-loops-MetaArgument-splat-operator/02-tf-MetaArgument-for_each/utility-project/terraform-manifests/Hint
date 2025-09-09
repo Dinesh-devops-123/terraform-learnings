@@ -1,0 +1,10 @@
+In Terraform:
+  - for_each requires a map or a set of strings.
+  - If you have a list, you usually wrap it with toset() to make it valid for for_each.
+
+  resource "aws_instance" "myec2" {
+  for_each = toset(var.az_list)   # ✅ Convert list to set
+  ami           = "ami-123456"
+  instance_type = "t3.micro"
+  availability_zone = each.value  # (for set, each.key == each.value)
+}
