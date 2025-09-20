@@ -1,0 +1,3 @@
+Modules are containers for multiple resources that are used together. A modules consist of a collection of .tf files kept together in a working directory.
+
+# Modules are the main way to package and reuse resource configurations with terraform

@@ -1,0 +1,4 @@
+# NAT Gateway route → keeps DB subnet private (only outbound allowed).
+# Internet Gateway route → makes DB subnet public (inbound + outbound allowed).
+
+# NAT gateway -- in prod it should be False it is costlier

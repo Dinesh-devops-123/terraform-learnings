@@ -1,9 +1,8 @@
 {
     "cSpell.words": [
-        "htdocs",
+        "hostnames",
         "keypair",
-        "myec",
-        "myec2vm",
+        "myvpc",
         "tfstate"
     ]
 }
