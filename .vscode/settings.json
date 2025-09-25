@@ -1,9 +1,18 @@
 {
     "cSpell.words": [
+        "grps",
         "htdocs",
         "keypair",
         "myec",
         "myec2vm",
         "tfstate"
-    ]
+    ],
+    "cSpell.customDictionaries": {
+        "custom-dictionary-workspace": {
+            "name": "custom-dictionary-workspace",
+            "path": "${workspaceFolder:tf-learning}/.cspell/custom-dictionary-workspace.txt",
+            "addWords": true,
+            "scope": "workspace"
+        }
+    }
 }
